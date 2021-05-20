@@ -1,5 +1,7 @@
-# reaching_for_the_edge
-Paper 2 of HSC vs. hydro: Measuring "total" mass of galaxies.
+# Reaching for the Edge
+A spinoff (Paper 2) of [HSC vs. hydro](https://github.com/f-ardila/HSC_vs_hydro).
+
+**Project Goal**: Measuring "total" mass of galaxies.
 
 ## Mass definitions
 
