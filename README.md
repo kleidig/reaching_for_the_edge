@@ -18,7 +18,6 @@ In [Paper 1](https://ui.adsabs.harvard.edu/abs/2021MNRAS.500..432A/abstract), we
    - M<sub>\*</sub> <sup>extrap</sup> ("extrapolated mass"): stellar mass enclosed in larger aperture inferred by extrapolating the 1D profile to 800 kpc using power-fit of the surface density profile between 50 and 100 kpc. This can be applied to real data as a better proxy of "total'' stellar mass.
 ![](figures/mass_differences_TNG.png)
 ![](figures/extrapolation.png)
-![](figures/mass_correction_all.png)
 
 - ### Check FOF bias
    - Benedikt sent some maps
