@@ -1,6 +1,6 @@
 # Notebooks
 - all_particles_checks : checks comparing galaxy maps with **ALL** stellar particles vs. just friends-of-friends (**FOF**) particles 
-   - `aull_particles_compare_profiles.ipynb`: Comparing the stellar mass profiles 
+   - `all_particles_compare_profiles.ipynb`: Comparing the stellar mass profiles 
    - `all_particles_check_individual_maps_profiles.ipynb`: Checking to see if the maps and stellar mass profiles of individual galaxies match up. Also save the profiles. 
    - `all_particles_fit_power_law.ipynb`: comparing fitting of power law to mass profile and extrapolating.
    - `all_particles_maps_tests.ipynb`: Initial exploration of new full particle data. Testing maps and profiles.
