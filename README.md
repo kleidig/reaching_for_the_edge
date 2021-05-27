@@ -1,7 +1,7 @@
 # Reaching for the Edge
 A spinoff (Paper 2) of [HSC vs. hydro](https://github.com/f-ardila/HSC_vs_hydro).
 
-**Project Goal**: Measuring "total" mass of galaxies. 
+**Project Goal**: Finding the edges of galaxies in simulations in order to measure their "total" stellar mass. 
 
 In [Paper 1](https://ui.adsabs.harvard.edu/abs/2021MNRAS.500..432A/abstract), we were measuring the stellar mass profiles of galaxies, which gives us mass at different radii. As a way to check our measurements, we wanted to compare our measurements to other mass definitions (see below). This lead us to ask questions about what is the "total" mass of a galaxy. We also noticed that some of our galaxies showed a falling off in their mass profile at very large radii (~800kpc) so we wondered if we were seeing the "edges" of galaxies. We learned from Benedikt that the FOF algorithm misses a lot of mass at large radii (>R500c) so we wanted to investigate this effect to see if that is what we are seeing.
 
@@ -17,12 +17,24 @@ In [Paper 1](https://ui.adsabs.harvard.edu/abs/2021MNRAS.500..432A/abstract), we
 
    - M<sub>\*</sub> <sup>extrap</sup> ("extrapolated mass"): stellar mass enclosed in larger aperture inferred by extrapolating the 1D profile to 800 kpc using power-fit of the surface density profile between 50 and 100 kpc. This can be applied to real data as a better proxy of "total'' stellar mass.
 ![](figures/mass_differences_TNG.png)
+
+- ### Fit a power law to mass profile
 ![](figures/extrapolation.png)
 
+- ### Attempt to correlate M100/Mcat to various galaxy shape properties with the goal of deriving a correction factor that can be applied to M100 to derive catalog mass 
+![](figures/mass_correction_all.png)
+
 - ### Check FOF bias
-   - Benedikt sent some maps
+   - Conventional wisdom was that FOF groups (and thus our maps, profiles etc) should be complete out to ~Rvir, but some groups recently found that it’s MUCH WORSE than expected (the effect becoming stronger at high z).
+   - Benedikt made [some plots](figures/Benedikt) testing this effect by comparing the FOF profiles against the full particle distribution. The plots show the “completeness” of the profile, i.e., the profile of FOF particles divided by all particles, for four redshifts (0, 0.5, 1, 2 = snapshots 99, 67, 50, 33). At each redshift, he extracted 100 random halos above M500c = 1E13 from TNG300-2.
+   - At z = 0.5 the stars are pretty OK (though not 100% complete) out to about R500c (note that R200c ~ 1.5 R500c). However, plotting the stellar profiles out to R200c is not! At least not if one cares to the 10% level. The effect gets way worse towards higher z. At z = 2, halos are much closer to each other, and we start to lose significant fractions of particles.
+![](figures/mass_profiles_all_vs_FOF.png)
+
+
 
 ## Next steps 
+- Further studying question of missing mass in FOF groups
+- Mass comparisons with ALL particles
 - Fitting a 2D Sersic model of the profile
    - Song's examples:
       - [Notebook](https://github.com/dr-guangtou/hsc_massive/blob/master/notebooks/simulation/tng_imfit_test.ipynb)
