@@ -1,9 +1,9 @@
 # Notebooks
 - all_particles_checks : checks comparing galaxy maps with **ALL** stellar particles vs. just friends-of-friends (**FOF**) particles 
-   - `full_particle_compare_profiles.ipynb`: Comparing the stellar mass profiles 
-   - `full_particle_check_individual_maps_profiles.ipynb`: Checking to see if the maps and stellar mass profiles of individual galaxies match up. Also save the profiles. 
-   - `full_particle_fit_power_law.ipynb`: comparing fitting of power law to mass profile and extrapolating.
-   - `full_particle_maps_tests.ipynb`: Initial exploration of new full particle data. Testing maps and profiles.
+   - `aull_particles_compare_profiles.ipynb`: Comparing the stellar mass profiles 
+   - `all_particles_check_individual_maps_profiles.ipynb`: Checking to see if the maps and stellar mass profiles of individual galaxies match up. Also save the profiles. 
+   - `all_particles_fit_power_law.ipynb`: comparing fitting of power law to mass profile and extrapolating.
+   - `all_particles_maps_tests.ipynb`: Initial exploration of new full particle data. Testing maps and profiles.
 - `extrapolated_masses.ipynb`: measuring mass from a power law fit to mass profile extrapolated to larger distance.
 - `extrapolated_masses_plots_for_paper.ipynb`
 - `galaxy_edge.ipynb`: plotting mass profiles to large radii and compare with TNG300.
