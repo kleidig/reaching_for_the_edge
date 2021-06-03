@@ -1,0 +1,12 @@
+# data
+- [Data read-in and exploration example.](../notebooks/data_read_example.ipynb)
+- maps and particle files are not on GitHub because they are too large.
+- `full_particles` (sometimes also labeled `all_particles` in my code) refers using data with all particles for a given halo, rather than just the associated FOF group particles. 
+- `masses` files contain various mass measurements for each galaxy in our sample. 
+   - each file is a pickled astropy table. each row is a galaxy. each column is a mass measurement.
+- `isos` files contain stellar mass profiles for each galaxy in our sample. "Iso" refers to isophotes or isomass ellipses around which mass is measured at different values for the semi-major axis to create the stellar mass profile.
+   - each file is a pickled list of astropy tables. 
+      - each table is the output from the stellar mass profile code (`galsbp`) for a single galaxy.
+         - each row is a measurement at a different semimajor axis.
+         - each column is one of many different parameters used in the measurement code. The most important ones are `sma_kpc` (semi-major axis in kpc) and `intens_kpc` (intensity or in this case mass density in Msun/kpc^2).
+         - `sma` and `intens` are the same quantities but in pixel distances rather than physical distances.
